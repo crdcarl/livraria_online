@@ -1,0 +1,123 @@
+body{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+.container {
+    max-width: 1080px;
+}
+
+.navbar {
+    margin: 24px;
+}
+
+.carousel {
+    margin-bottom: 24px;
+    max-width: 720px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.navbar h1 {
+    color: rgb(12, 175, 153);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar ul li a  {
+    font-weight: bold;
+    color: rgb(12, 175, 153);
+    font-style: italic;
+    font-size: 19px;
+}
+
+.container {
+    align-items: center;
+    max-width: 1080px;
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 3%;
+}
+
+.row .card {
+    width: 600%;
+}
+
+.row .card button {
+    border: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    font-size: 17px;
+    
+}
+
+.row .card button:hover {
+    background-color: rgb(52, 179, 147);
+}
+
+.row .card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.container h2 {
+    color: rgb(12, 175, 153);
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.row .col-3 {
+    padding: 24px;
+}
+
+@media screen and (max-width: 640px ) {
+    .container {
+        max-width: 640px;
+    }
+
+    .navbar {
+        margin-left: 0;
+    }
+
+    .carousel{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .row {
+        width: 400px;
+        display: block;
+        margin-bottom: 30px; 
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .row .card {
+        width: 600%;
+    }
+
+
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+
+
+    .row {
+        display:grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+    }
+
+    .row .card {
+        width: 600%;
+    }
+}
